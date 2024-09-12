@@ -5,7 +5,7 @@
 <br>
 
 <div>
-<img align="center" alt="logo1" height=30%  width=30% src="logo.png" />
+<img align="center" alt="logo1" height=30%  width=30% src="documentacao/logo.png" />
 </div>
 
 <br>
@@ -24,7 +24,7 @@
 
 # Diagrama de Estrutura de Pastas
 
-Para acessar o diagrama da Healy, aperte [Diagrama.md]().
+Para acessar o diagrama da Healy, aperte [Diagrama.md](documentacao/diagrama_sprint3.png).
 
 <br>
 <br>
