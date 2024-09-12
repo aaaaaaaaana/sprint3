@@ -24,7 +24,20 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
 
+        }
+
+
+        var btnCadastro:Button = findViewById(R.id.botaoCadastro)
+
+
+        // adicionar evento do clique
+        btnCadastro.setOnClickListener{
+
+            var intent = Intent(this, Cadastro::class.java)
+
+            startActivity(intent)
 
         }
+
     }
 }
