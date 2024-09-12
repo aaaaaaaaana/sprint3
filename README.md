@@ -5,7 +5,7 @@
 <br>
 
 <div>
-<img align="center" alt="logo1" height=30%  width=30% src="documentacao/logo.png" />
+<img align="center" alt="logo1" height=20%  width=20% src="documentacao/logo.png" />
 </div>
 
 <br>
