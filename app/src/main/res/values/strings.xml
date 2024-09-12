@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">healy</string>
+    <string name="senha">Senha</string>
+    <string name="j_possui_login_clique_aqui_para_logar">Já possui login? Clique aqui para logar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="crie_uma_senha">Crie uma senha</string>
+    <string name="cpf">CPF</string>
+    <string name="digite_seu_cpf">Digite seu CPF</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="digite_seu_nome_completo">Digite seu nome completo</string>
+    <string name="n_o_possui_cadastro_clique_aqui_para_se_cadastrar">Não possui cadastro? Clique aqui para se cadastrar</string>
 </resources>

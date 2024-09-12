@@ -41,9 +41,9 @@
         android:id="@+id/logo"
         android:layout_width="54dp"
         android:layout_height="52dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
@@ -94,6 +94,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fillViewport="true"
             >
 
             <LinearLayout
@@ -122,8 +123,9 @@
                     android:background="@drawable/caixa_edittxt"
                     android:drawablePadding="8dp"
                     android:hint="Email"
-                    android:padding="8dp"
-                    android:textColor="@color/black" />
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionDone"
+                    android:padding="8dp"/>
 
                 <TextView
                     android:id="@+id/nomeEscrita"
@@ -132,7 +134,7 @@
                     android:layout_gravity="start"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="30dp"
-                    android:text="Digite seu nome completo"
+                    android:text="@string/digite_seu_nome_completo"
                     android:textColor="@color/primario"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -146,10 +148,10 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/caixa_edittxt"
                     android:drawablePadding="8dp"
-                    android:hint="Nome completo"
-                    android:inputType="textPassword"
+                    android:hint="@string/nome_completo"
+                    android:inputType="text"
                     android:padding="8dp"
-                    android:textColor="@color/black" />
+                    android:imeOptions="actionDone" />
 
                 <TextView
                     android:id="@+id/cpfEscrita"
@@ -158,7 +160,7 @@
                     android:layout_gravity="start"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="30dp"
-                    android:text="Digite seu CPF"
+                    android:text="@string/digite_seu_cpf"
                     android:textColor="@color/primario"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -172,10 +174,10 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/caixa_edittxt"
                     android:drawablePadding="8dp"
-                    android:hint="CPF"
-                    android:inputType="textPassword"
-                    android:padding="8dp"
-                    android:textColor="@color/black" />
+                    android:hint="@string/cpf"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:padding="8dp"/>
 
                 <TextView
                     android:id="@+id/criaSenhaEscrita"
@@ -184,7 +186,7 @@
                     android:layout_gravity="start"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="30dp"
-                    android:text="Crie uma senha"
+                    android:text="@string/crie_uma_senha"
                     android:textColor="@color/primario"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -192,23 +194,24 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:passwordToggleEnabled="true"
-                    android:textColorHint="#A6A4A5">
+                    android:textColorHint="#99959B"
+                    app:hintAnimationEnabled="false"
+                    app:passwordToggleEnabled="true">
 
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/senha"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginHorizontal="35dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/caixa_edittxt"
                         android:drawablePadding="8dp"
-                        android:hint="Senha"
+                        android:hint="@string/senha"
+                        android:imeOptions="actionDone"
                         android:inputType="textPassword"
-                        android:padding="8dp"
-                        />
+                        android:padding="8dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -220,7 +223,7 @@
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="30dp"
                     android:backgroundTint="@color/primario"
-                    android:text="Cadastrar"
+                    android:text="@string/cadastrar"
                     android:textSize="18sp"
                     app:cornerRadius="20dp" />
 
@@ -232,10 +235,12 @@
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="60dp"
-                    android:text="Já possui login? Clique aqui para logar"
+                    android:text="@string/j_possui_login_clique_aqui_para_logar"
                     android:textColor="@color/primario"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
             </LinearLayout>
         </ScrollView>
 
