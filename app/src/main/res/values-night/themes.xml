@@ -13,4 +13,9 @@
 
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
+
+    <style name="fundo">
+        <item name="android:background">#272727</item>
+    </style>
+
 </resources>
