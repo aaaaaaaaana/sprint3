@@ -24,7 +24,7 @@
 
 # Diagrama de Estrutura de Pastas
 
-Para acessar o diagrama da Healy, aperte [Diagrama.md](documentacao/diagrama_sprint3.png).
+Para acessar o diagrama da Healy, aperte [Diagrama.md](documentacao/diagrama.png).
 
 <br>
 <br>
