@@ -14,32 +14,32 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        var btnLogin:Button = findViewById(R.id.botaoLogin)
-
-
-        // adicionar evento do clique
-        btnLogin.setOnClickListener{
-
-            var intent = Intent(this, Login::class.java)
-
-            startActivity(intent)
-
-        }
-
-
-        var btnCadastro:Button = findViewById(R.id.botaoCadastro)
-
-
-        // adicionar evento do clique
-        btnCadastro.setOnClickListener{
-
-            var intent = Intent(this, Cadastro::class.java)
-
-            startActivity(intent)
-
-
-
-        }
+//        var btnLogin:Button = findViewById(R.id.botaoLogin)
+//
+//
+//        // adicionar evento do clique
+//        btnLogin.setOnClickListener{
+//
+//            var intent = Intent(this, Login::class.java)
+//
+//            startActivity(intent)
+//
+//        }
+//
+//
+//        var btnCadastro:Button = findViewById(R.id.botaoCadastro)
+//
+//
+//        // adicionar evento do clique
+//        btnCadastro.setOnClickListener{
+//
+//            var intent = Intent(this, Cadastro::class.java)
+//
+//            startActivity(intent)
+//
+//
+//
+//        }
 
     }
 }
