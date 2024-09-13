@@ -13,9 +13,8 @@
         android:theme="@style/Theme.Healy"
         tools:targetApi="31">
         <activity
-            android:name=".Menu"
-            android:exported="false"
-            android:label="@string/title_activity_menu" />
+            android:name=".ScrollView"
+            android:exported="false" />
         <activity
             android:name=".Perfil"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
@@ -25,7 +24,7 @@
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".Login"
+            android:name=".Home"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
             android:exported="false"
             android:fitsSystemWindows="true"
