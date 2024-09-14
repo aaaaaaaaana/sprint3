@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -78,11 +77,11 @@
 
     <LinearLayout
         android:id="@+id/card"
+        style="@style/fundo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:layout_marginTop="300dp"
-        style="@style/fundo"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -97,7 +96,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/userEscrita"
@@ -105,11 +104,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="20dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
                     android:text="User"
                     android:textColor="@color/primario"
                     android:textSize="16sp"
-                    android:inputType="text"
-                    android:imeOptions="actionDone"
                     android:textStyle="bold" />
 
                 <EditText
@@ -121,8 +120,8 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/caixa_edittxt"
                     android:drawablePadding="8dp"
-                    android:imeOptions="actionDone"
                     android:hint="User"
+                    android:imeOptions="actionDone"
                     android:padding="8dp" />
 
 
@@ -141,8 +140,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:passwordToggleEnabled="true"
-                    android:textColorHint="#A6A4A5">
+                    android:textColorHint="#A6A4A5"
+                    app:passwordToggleEnabled="true">
 
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -155,10 +154,9 @@
                         android:background="@drawable/caixa_edittxt"
                         android:drawablePadding="8dp"
                         android:hint="Senha"
-                        android:inputType="textPassword"
                         android:imeOptions="actionDone"
-                        android:padding="8dp"
-                        />
+                        android:inputType="textPassword"
+                        android:padding="8dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -182,14 +180,12 @@
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="60dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:text="@string/n_o_possui_cadastro_clique_aqui_para_se_cadastrar"
                     android:textColor="@color/primario"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:clickable="true"
-                    android:focusable="true" />
-
-
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
