@@ -1,6 +1,8 @@
 package com.bma.healy
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -10,24 +12,35 @@ class Home : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
 
-//        var linkLogin: TextView = findViewById(R.id.linkLogin)
-//
-//        var botaoLogin: TextView = findViewById(R.id.botaoLogin)
-//
-//
-//        // adicionar evento do clique
-//        linkLogin.setOnClickListener{
-//
-//            var intent = Intent(this, Cadastro::class.java)
-//
-//            startActivity(intent)
-//        }
-//
-//        botaoLogin.setOnClickListener{
-//
-//            var intent = Intent(this, MainActivity::class.java)
-//
-//            startActivity(intent)
-//        }
+        var botaoPerfil: ImageView = findViewById(R.id.perfil)
+
+        var botaoResultado: ImageView = findViewById(R.id.resultado)
+
+        var botaoFormulario: ImageView = findViewById(R.id.formulario)
+
+
+
+        // adicionar evento do clique
+        botaoPerfil.setOnClickListener{
+
+            var intent = Intent(this, Perfil::class.java)
+
+            startActivity(intent)
+        }
+
+        botaoResultado.setOnClickListener{
+
+            var intent = Intent(this, Home::class.java)
+
+            startActivity(intent)
+        }
+
+
+        botaoFormulario.setOnClickListener{
+
+            var intent = Intent(this, Formulario::class.java)
+
+            startActivity(intent)
+        }
     }
 }
