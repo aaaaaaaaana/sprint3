@@ -21,7 +21,7 @@
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="50dp"
+                android:layout_width="49dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
