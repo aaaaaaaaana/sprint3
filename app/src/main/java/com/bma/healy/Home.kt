@@ -29,7 +29,8 @@ class Home : AppCompatActivity() {
 
         when (item.itemId) {
             R.id.formulario -> {
-                this.startActivity(Intent(this, Formulario::class.java))
+                val intent = Intent(this, Formulario::class.java)
+                startActivity(intent)
                 return true
             }
             R.id.resultado -> {
