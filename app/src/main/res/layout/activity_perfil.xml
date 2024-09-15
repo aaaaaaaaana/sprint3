@@ -143,10 +143,10 @@
 
 
                             <ImageView
-                                android:layout_width="90dp"
-                                android:layout_height="90dp"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
                                 android:layout_gravity="center"
-                                android:layout_marginTop="15dp"
+                                android:layout_marginTop="20dp"
                                 android:src="@drawable/completoroxo" />
 
 
@@ -154,7 +154,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
                                 android:elegantTextHeight="true"
                                 android:justificationMode="inter_word"
@@ -181,10 +181,10 @@
 
 
                             <ImageView
-                                android:layout_width="90dp"
-                                android:layout_height="90dp"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
                                 android:layout_gravity="center"
-                                android:layout_marginTop="15dp"
+                                android:layout_marginTop="20dp"
                                 android:src="@drawable/completoroxo" />
 
 
@@ -192,7 +192,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
                                 android:elegantTextHeight="true"
                                 android:justificationMode="inter_word"
@@ -219,10 +219,10 @@
 
 
                             <ImageView
-                                android:layout_width="90dp"
-                                android:layout_height="90dp"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
                                 android:layout_gravity="center"
-                                android:layout_marginTop="15dp"
+                                android:layout_marginTop="20dp"
                                 android:src="@drawable/completoroxo" />
 
 
@@ -230,7 +230,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
                                 android:elegantTextHeight="true"
                                 android:justificationMode="inter_word"
