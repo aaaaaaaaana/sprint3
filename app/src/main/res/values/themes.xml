@@ -17,5 +17,10 @@
         <item name="android:background">#FBF9F7</item>
     </style>
 
+    <style name="icon" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:backgroundTint">#048A8F</item>
+        <item name="tint">#49454F</item>
+    </style>
+
     <style name="Theme.Healy" parent="Base.Theme.Healy" />
 </resources>

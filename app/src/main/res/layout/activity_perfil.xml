@@ -7,101 +7,259 @@
     android:layout_height="match_parent"
     tools:context=".Perfil">
 
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
-        android:background="#048A8F"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
-            android:layout_gravity="start"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="-20dp"
-            android:rotation="-143"
-            android:rotationY="0"
-            app:srcCompat="@drawable/flor" />
-        \
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="80dp"
-            android:layout_height="180dp"
-            android:layout_gravity="start"
-            android:layout_marginHorizontal="70dp"
-            android:layout_marginTop="-30dp"
-            android:rotation="-207"
-            android:rotationY="180"
-            app:srcCompat="@drawable/flor" />
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="#048A8F">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="190dp"
+                    android:rotation="28"
+                    android:rotationY="0"
+                    app:srcCompat="@drawable/flor" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="80dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="end"
+                    android:layout_marginHorizontal="60dp"
+                    android:layout_marginTop="120dp"
+                    android:rotation="-23"
+                    android:rotationY="180"
+                    app:srcCompat="@drawable/flor" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="80dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="70dp"
+                    android:layout_marginTop="-30dp"
+                    android:rotation="-207"
+                    android:rotationY="180"
+                    app:srcCompat="@drawable/flor" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="-20dp"
+                    android:rotation="-143"
+                    android:rotationY="0"
+                    app:srcCompat="@drawable/flor" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="75dp"
+                    android:src="@drawable/snoopymedico"
+                    app:civ_border_color="@color/primario"
+                    app:civ_border_width="5dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="200dp"
+                    android:text="Snoopy Paciente"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="200dp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="48dp"
+                android:gravity="start"
+                android:text="Formulários Preenchido"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
 
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="80dp"
-            android:layout_height="180dp"
-            android:layout_gravity="end"
-            android:layout_marginHorizontal="60dp"
-            android:layout_marginTop="120dp"
-            android:rotation="-23"
-            android:rotationY="180"
-            app:srcCompat="@drawable/flor" />
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/completoroxo" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
-            android:layout_gravity="end"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="190dp"
-            android:rotation="28"
-            android:rotationY="0"
-            app:srcCompat="@drawable/flor" />
-    </FrameLayout>
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:layout_marginTop="75dp"
-        android:src="@drawable/snoopymedico"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:civ_border_color="@color/primario"
-        app:civ_border_width="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="15dp"
+                                android:elegantTextHeight="true"
+                                android:justificationMode="inter_word"
+                                android:paddingHorizontal="15dp"
+                                android:text="02/04/2024"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="179dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="175dp"
-        android:text="Snoopy Medico"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#272727"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        tools:ignore="MissingConstraints">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/completoroxo" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="15dp"
+                                android:elegantTextHeight="true"
+                                android:justificationMode="inter_word"
+                                android:paddingHorizontal="15dp"
+                                android:text="07/06/2024"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/completoroxo" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="15dp"
+                                android:elegantTextHeight="true"
+                                android:justificationMode="inter_word"
+                                android:paddingHorizontal="15dp"
+                                android:text="25/10/2024"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#272727"
+                    tools:ignore="MissingConstraints">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
@@ -129,7 +287,6 @@
             app:fabCradleMargin="10dp"
             app:fabCradleRoundedCornerRadius="50dp"
             app:fabCradleVerticalOffset="6dp">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -199,6 +356,4 @@
             app:maxImageSize="30dp"
             app:tint="@color/white" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
