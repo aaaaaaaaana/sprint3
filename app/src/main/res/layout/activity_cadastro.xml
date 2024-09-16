@@ -112,6 +112,31 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/caixa_edittxt"
+                    android:drawablePadding="8dp"
+                    android:hint="User"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/userEscrita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Crie um user"
+                    android:textColor="@color/primario"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"

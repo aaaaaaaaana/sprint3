@@ -31,31 +31,14 @@ class MainActivity : AppCompatActivity() {
         binding.botaoLogin.setOnClickListener(View.OnClickListener {
             if(binding.user.text.toString() == "user" && binding.senha.text.toString() == "1234"){
                 Toast.makeText(this, "Logado com Sucesso", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, Home::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Falha no Login", Toast.LENGTH_SHORT).show()
             }
         })
 
 
-        var linkLogin: TextView = findViewById(R.id.linkLogin)
-
-        var botaoLogin: TextView = findViewById(R.id.botaoLogin)
-
-
-        // adicionar evento do clique
-        linkLogin.setOnClickListener {
-
-            var intent = Intent(this, Cadastro::class.java)
-
-            startActivity(intent)
-        }
-
-        botaoLogin.setOnClickListener {
-
-            var intent = Intent(this, Home::class.java)
-
-            startActivity(intent)
-        }
 
 
     }
