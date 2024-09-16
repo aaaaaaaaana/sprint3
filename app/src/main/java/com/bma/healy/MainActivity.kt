@@ -30,7 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.botaoLogin.setOnClickListener(View.OnClickListener {
             if(binding.user.text.toString() == "user" && binding.senha.text.toString() == "1234"){
-
+                Toast.makeText(this, "Logado com Sucesso", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Falha no Login", Toast.LENGTH_SHORT).show()
             }
         })
 
@@ -50,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
         botaoLogin.setOnClickListener {
 
-            var intent = Intent(this, Perfil::class.java)
+            var intent = Intent(this, Home::class.java)
 
             startActivity(intent)
         }
