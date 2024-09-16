@@ -13,9 +13,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
         android:src="@drawable/logo"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/headerLine"
@@ -23,16 +23,16 @@
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
         android:background="#3B3A40"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginVertical="30dp"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="30dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="8dp"
         app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
@@ -54,9 +54,9 @@
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="25dp"
                     android:layout_marginBottom="15dp"
-                    android:layout_gravity="center"
                     android:text="Formulário"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -70,9 +70,9 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:layout_marginBottom="15dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -129,8 +129,8 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
                         android:gravity="start"
                         android:orientation="vertical">
 
@@ -188,9 +188,9 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:layout_marginBottom="15dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -247,9 +247,9 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:layout_marginBottom="15dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -281,9 +281,9 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:layout_marginBottom="15dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -313,9 +313,9 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:layout_marginBottom="15dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -345,8 +345,8 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
                         android:gravity="start"
                         android:orientation="vertical">
 
@@ -377,9 +377,9 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:layout_marginBottom="15dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -412,25 +412,33 @@
 
         </ScrollView>
     </androidx.cardview.widget.CardView>
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <View
+            android:id="@+id/embaixo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#3B3A40" />
+
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/menu"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:backgroundTint="#00FFFFFF"
             app:fabAlignmentMode="center"
             app:fabCradleMargin="10dp"
             app:fabCradleRoundedCornerRadius="50dp"
             app:fabCradleVerticalOffset="6dp">
+
 
             <LinearLayout
                 android:layout_width="match_parent"

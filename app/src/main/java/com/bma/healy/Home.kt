@@ -18,32 +18,35 @@ class Home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
 
-    }
+        var botaoPerfil: ImageView = findViewById(R.id.perfil)
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.menu_nav, menu)
-        return true
-    }
+        var botaoResultado: ImageView = findViewById(R.id.resultado)
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        var botaoFormulario: ImageView = findViewById(R.id.formulario)
 
-        when (item.itemId) {
-            R.id.formulario -> {
-                val intent = Intent(this, Formulario::class.java)
-                startActivity(intent)
-                return true
-            }
-            R.id.resultado -> {
-                val intent = Intent(this, Home::class.java)
-                startActivity(intent)
-                return true
-            }
-            R.id.perfil -> {
-                val intent = Intent(this, Perfil::class.java)
-                startActivity(intent)
-                return true
-            }
-            else -> return super.onOptionsItemSelected(item)
+
+        // adicionar evento do clique
+        botaoPerfil.setOnClickListener {
+
+            var intent = Intent(this, Perfil::class.java)
+
+            startActivity(intent)
         }
+
+        botaoResultado.setOnClickListener {
+
+            var intent = Intent(this, Home::class.java)
+
+            startActivity(intent)
+        }
+
+
+        botaoFormulario.setOnClickListener {
+
+            var intent = Intent(this, Formulario::class.java)
+
+            startActivity(intent)
+        }
+
     }
 }
