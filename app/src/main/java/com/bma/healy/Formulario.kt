@@ -2,7 +2,9 @@ package com.bma.healy
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -19,17 +21,18 @@ class Formulario : AppCompatActivity() {
 
         var botaoFormulario: ImageView = findViewById(R.id.formulario)
 
+        var cadastrarFormulario: Button = findViewById(R.id.registrar)
 
 
         // adicionar evento do clique
-        botaoPerfil.setOnClickListener{
+        botaoPerfil.setOnClickListener {
 
             var intent = Intent(this, Perfil::class.java)
 
             startActivity(intent)
         }
 
-        botaoResultado.setOnClickListener{
+        botaoResultado.setOnClickListener {
 
             var intent = Intent(this, Home::class.java)
 
@@ -37,10 +40,16 @@ class Formulario : AppCompatActivity() {
         }
 
 
-        botaoFormulario.setOnClickListener{
+        botaoFormulario.setOnClickListener {
 
             var intent = Intent(this, Formulario::class.java)
 
+            startActivity(intent)
+        }
+
+        botaoFormulario.setOnClickListener {
+
+            Toast.makeText(this, "Formulário preenchido com sucesso!!!!!", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
     }
