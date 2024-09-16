@@ -120,7 +120,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/caixa_edittxt"
                     android:drawablePadding="8dp"
-                    android:hint="User"
+                    android:hint="Email"
                     android:imeOptions="actionDone"
                     android:inputType="textEmailAddress"
                     android:padding="8dp" />
@@ -145,7 +145,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/caixa_edittxt"
                     android:drawablePadding="8dp"
-                    android:hint="Email"
+                    android:hint="User"
                     android:imeOptions="actionDone"
                     android:inputType="textEmailAddress"
                     android:padding="8dp" />
@@ -209,7 +209,7 @@
                     android:layout_gravity="start"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="30dp"
-                    android:text="@string/crie_uma_senha"
+                    android:text="Crie uma senha(min. 8 caracteres):"
                     android:textColor="@color/primario"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -222,6 +222,10 @@
                     app:passwordToggleEnabled="true">
 
 
+
+
+
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/senha"
                         android:layout_width="match_parent"
@@ -232,6 +236,45 @@
                         android:background="@drawable/caixa_edittxt"
                         android:drawablePadding="8dp"
                         android:hint="@string/senha"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:padding="8dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/confirmaSenhaEscrita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Confirme a Senha:"
+                    android:textColor="@color/primario"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="#99959B"
+                    app:hintAnimationEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+
+
+
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirmaSenha"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/caixa_edittxt"
+                        android:drawablePadding="8dp"
+                        android:hint="Confirmar Senha"
                         android:imeOptions="actionDone"
                         android:inputType="textPassword"
                         android:padding="8dp" />
