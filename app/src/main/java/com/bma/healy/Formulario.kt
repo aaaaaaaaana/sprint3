@@ -14,43 +14,34 @@ class Formulario : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_formulario)
 
-
-        var botaoPerfil: ImageView = findViewById(R.id.perfil)
-
-        var botaoResultado: ImageView = findViewById(R.id.resultado)
-
-        var botaoFormulario: ImageView = findViewById(R.id.formulario)
-
-        var cadastrarFormulario: Button = findViewById(R.id.registrar)
+        val botaoPerfil: ImageView = findViewById(R.id.perfil)
+        val botaoResultado: ImageView = findViewById(R.id.resultado)
+        val botaoFormulario: ImageView = findViewById(R.id.formulario)
+        val cadastrarFormulario: Button = findViewById(R.id.registrar)
 
 
-        // adicionar evento do clique
         botaoPerfil.setOnClickListener {
-
-            var intent = Intent(this, Perfil::class.java)
-
+            val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
+
 
         botaoResultado.setOnClickListener {
-
-            var intent = Intent(this, Home::class.java)
-
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
 
 
         botaoFormulario.setOnClickListener {
-
-            var intent = Intent(this, Formulario::class.java)
-
-            startActivity(intent)
-        }
-
-        botaoFormulario.setOnClickListener {
-
+            val intent = Intent(this, Formulario::class.java)
             Toast.makeText(this, "Formulário preenchido com sucesso!!!!!", Toast.LENGTH_SHORT).show()
             startActivity(intent)
+        }
+
+
+        cadastrarFormulario.setOnClickListener {
+
+            Toast.makeText(this, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show()
         }
     }
 }

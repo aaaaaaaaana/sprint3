@@ -2,57 +2,61 @@ package com.bma.healy
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.bma.healy.databinding.ActivityMainBinding
-import java.security.MessageDigest
-import android.util.Base64
-import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var firebaseAuth: FirebaseAuth
+
+    lateinit var username: EditText
+    lateinit var password: EditText
+    lateinit var loginButton: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        firebaseAuth = FirebaseAuth.getInstance()
-        binding.linkLogin.setOnClickListener {
-            val intent = Intent(this, Cadastro::class.java)
+
+        binding.botaoLogin.setOnClickListener(View.OnClickListener {
+            if(binding.user.text.toString() == "user" && binding.senha.text.toString() == "1234"){
+                Toast.makeText(this, "Logado com Sucesso", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Falha no Login", Toast.LENGTH_SHORT).show()
+            }
+        })
+
+
+        var linkLogin: TextView = findViewById(R.id.linkLogin)
+
+        var botaoLogin: TextView = findViewById(R.id.botaoLogin)
+
+
+        // adicionar evento do clique
+        linkLogin.setOnClickListener {
+
+            var intent = Intent(this, Cadastro::class.java)
+
             startActivity(intent)
         }
 
-        binding.botaoLogin.setOnClickListener{
-            val user = binding.user.text.toString()
-            val senha = binding.senha.text.toString()
+        botaoLogin.setOnClickListener {
 
-            if (user.isNotEmpty() && senha.isNotEmpty()) {
+            var intent = Intent(this, Home::class.java)
 
-
-                    firebaseAuth.signInWithEmailAndPassword(user, senha).addOnCompleteListener{
-                        if (it.isSuccessful){
-                            val intent = Intent(this, Home::class.java)
-                            startActivity(intent)
-
-                        }else{
-                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
-
-                        }
-                    }
-            }else{
-                Toast.makeText(this, "Campo vazio, preencha!!", Toast.LENGTH_SHORT).show()
-            }
-
-
+            startActivity(intent)
         }
 
 
     }
-
 }
